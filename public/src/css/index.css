@@ -21,15 +21,14 @@ p {
     color: #717082;
     font-weight: 400;
     font-size: 18px;
+    line-height: 24px;
 }
 
 h1, h2, h3 {
     font-family: 'Playfair Display';
     color: #2F2E41;
     font-weight: 700;
-
 }
-
 
 h1 {
     font-size: 86px;
@@ -48,9 +47,13 @@ h3 {
 }
 
 h4 {
-    color: #2F2E41;
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.body-title {
     font-weight: 600;
-    font-size: 18px;
+    color: #2F2E41;
 }
 
 .container {
@@ -162,15 +165,17 @@ h4 {
 .btn {
     height: 51px;
     padding: 16px 30px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
+    line-height: 22px;
 }
 
 .btn-large {
     height: 54px;
     padding: 16px 47px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
+    line-height: 22px;
 }
 
 .btn-primary {
@@ -253,7 +258,10 @@ h4 {
 
 }
 
-.card-large p,
+.card-large p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .card-large .acent {
     color: white;
 }
@@ -284,8 +292,9 @@ h4 {
 
 nav a {
     color: #9893A3;
+    font-weight: 700;
     font-size: 16px;
-    font-weight: bold;
+    line-height: 22px;
 }
 
 
@@ -311,6 +320,7 @@ nav a {
 #about p {
     font-size: 20px;
     line-height: 34px;
+    color: #9893A3;
 }
 
 
@@ -340,30 +350,30 @@ nav a {
     width: 346px;
 }
 
-
+#banner .btn-large {
+    height: 54px;
+    padding: 16px 56.5px;
+}
 
 .footer-container {
     display: flex;
     flex-direction: column;
     height: 560px;
+    min-width: 1440px;
     background: rgba(236, 235, 255, 0.6);
     justify-content: end;
     padding-bottom: 40px;
 }
 
-.footer-container p {
-    color: #9893A3;
-    font-size: 12px;
-}
-
-.footer-container li {
+#contact li {
     margin-bottom: 8px;
 }
 
-.footer-container a {
+#contact a {
     color: #717082;
 }
-.footer-container h4 {
+
+#contact .body-title {
     margin-bottom: 20px;
 }
 
@@ -379,4 +389,9 @@ nav a {
     border-radius: 1px;
     align-items: center;
     justify-content: center;
+}
+
+#copyright {
+    color: #9893A3;
+    font-size: 12px;
 }
